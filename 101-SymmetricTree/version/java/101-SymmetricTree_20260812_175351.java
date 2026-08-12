@@ -1,0 +1,7 @@
+// Last updated: 12/08/2026, 17:53:51
+1class Solution {
+2    public boolean hasAlternatingBits(int n) {
+3        int x = n ^ (n >> 1);
+4        return (x & (x + 1)) == 0;
+5    }
+6}
